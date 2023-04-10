@@ -1,4 +1,4 @@
-import 'package:test_bloc_rethrow/sample_datasource.dart';
+import 'package:test_bloc_rethrow/feature/data/datasource/sample_datasource.dart';
 
 abstract class SampleRepository {
   factory SampleRepository({required SampleDataSource sampleDataSource}) =

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test_bloc_rethrow/sample_page.dart';
+import 'package:test_bloc_rethrow/feature/ui/page/sample_page.dart';
 
 import 'bloc_observer.dart';
 

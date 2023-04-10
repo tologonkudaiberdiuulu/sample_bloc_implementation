@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:test_bloc_rethrow/bloc/sample_bloc.dart';
+import 'package:test_bloc_rethrow/feature/bloc/sample_bloc.dart';
 
 class SampleView extends StatelessWidget {
   const SampleView({super.key});
