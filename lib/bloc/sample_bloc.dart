@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:test_bloc_rethrow/sample_repository.dart';
@@ -21,12 +20,7 @@ class SampleBloc extends Bloc<SampleEvent, SampleState> {
       try {
         final resp = await _sampleRepository.getSampleData();
         emit(SampleState.loaded(data: resp));
-      } catch (err, stackTrace) {
-        if (kDebugMode) {
-          print(
-              '------------------------Stack Trace Printing--------------------------');
-          print(stackTrace.toString());
-        }
+      } catch (err) {
         emit(SampleState.error(errorMessage: err.toString()));
         rethrow;
       }
